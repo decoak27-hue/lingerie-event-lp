@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下着迷子お悩み相談会 4/28 | ランジェリースタイリスト Aki</title>
+  <meta name="description" content="産後のブラ選びに迷うあなたへ。ランジェリースタイリストによる完全予約制の個別相談会。4月28日（火）市川にて開催。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:     #EDE5DC;
+      --card:   #F5F2EE;
+      --white:  #FFFFFF;
+      --dark:   #2C2C2C;
+      --gold:   #C9A96E;
+      --pink:   #E8C4BC;
+      --muted:  rgba(44,44,44,0.55);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--dark);
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ==============================
+       HERO
+    ============================== */
+    .hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 10;
+      max-height: 560px;
+      overflow: hidden;
+      background: #C8B8A8;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 90%;
+      display: block;
+    }
+
+    .hero-fade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 60%, var(--bg) 100%);
+    }
+
+    /* ==============================
+       CONTAINER
+    ============================== */
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==============================
+       TITLE SECTION
+    ============================== */
+    .title-section {
+      text-align: center;
+      padding: 8px 24px 32px;
+    }
+
+    .eyebrow {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .main-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 44px;
+      color: var(--dark);
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+    }
+
+    .main-title em {
+      font-style: italic;
+      color: var(--gold);
+      display: block;
+      font-size: 36px;
+    }
+
+    .gold-rule {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px auto;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    /* ==============================
+       QUOTE SECTION
+    ============================== */
+    .quote-section {
+      background: var(--dark);
+      padding: 44px 32px;
+      margin: 0 0 40px;
+    }
+
+    .quote-section p {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 20px;
+      color: var(--card);
+      line-height: 2;
+      letter-spacing: 0.04em;
+    }
+
+    .quote-section p + p {
+      margin-top: 4px;
+    }
+
+    .quote-section .quote-close {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-style: normal;
+      font-size: 14px;
+      color: var(--gold);
+      margin-top: 20px;
+      letter-spacing: 0.12em;
+    }
+
+    /* ==============================
+       SECTION COMMON
+    ============================== */
+    .section {
+      padding: 0 24px 48px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.32em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--dark);
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(201,169,110,0.3);
+    }
+
+    /* ==============================
+       TARGET LIST
+    ============================== */
+    .target-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .target-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--dark);
+    }
+
+    .target-list li::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 10px;
+    }
+
+    /* ==============================
+       DETAIL TABLE
+    ============================== */
+    .detail-card {
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      border-bottom: 1px solid rgba(44,44,44,0.08);
+    }
+
+    .detail-row:last-child { border-bottom: none; }
+
+    .detail-key {
+      background: rgba(201,169,110,0.1);
+      padding: 14px 12px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .detail-val {
+      padding: 14px 16px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--dark);
+    }
+
+    .detail-val strong {
+      font-weight: 500;
+      color: var(--gold);
+      font-size: 18px;
+    }
+
+    .detail-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+
+    /* ==============================
+       MENU ITEMS (当日できること)
+    ============================== */
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .menu-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 32px;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .menu-name {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--dark);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .menu-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* ==============================
+       POLICY
+    ============================== */
+    .policy-box {
+      background: var(--dark);
+      border-radius: 4px;
+      padding: 28px 24px;
+    }
+
+    .policy-box li {
+      list-style: none;
+      font-size: 13px;
+      color: var(--card);
+      line-height: 1.9;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .policy-box li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 11px;
+    }
+
+    /* ==============================
+       BELONGINGS
+    ============================== */
+    .belong-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .belong-row {
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .belong-label {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    /* ==============================
+       PROFILES
+    ============================== */
+    .profile-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .profile-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .profile-name {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--dark);
+      margin-bottom: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .profile-role {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .profile-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    /* ==============================
+       CTA
+    ============================== */
+    .cta-section {
+      padding: 0 24px 64px;
+      max-width: 480px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cta-label {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: var(--dark);
+      color: var(--card);
+      text-decoration: none;
+      padding: 20px;
+      border-radius: 4px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.14em;
+      transition: opacity 0.2s;
+    }
+
+    .cta-btn:hover { opacity: 0.8; }
+
+    .cta-btn span {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 12px;
+      color: var(--gold);
+      margin-top: 4px;
+      letter-spacing: 0.16em;
+    }
+
+    .cta-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 16px;
+      line-height: 1.9;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+    .footer {
+      background: var(--dark);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: rgba(245,242,238,0.5);
+      letter-spacing: 0.12em;
+    }
+
+    /* ==============================
+       DIVIDER
+    ============================== */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(201,169,110,0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="lingerie.jpg" alt="ランジェリーイベント">
+    <div class="hero-fade"></div>
+  </div>
+
+  <!-- TITLE -->
+  <div class="title-section container">
+    <p class="eyebrow">Lingerie Styling Event · 2026.04.28</p>
+    <h1 class="main-title">
+      下着迷子
+      <em>お悩み相談会</em>
+    </h1>
+    <div class="gold-rule"></div>
+    <p class="subtitle">ランジェリースタイリストによる　完全予約制　個別相談会</p>
+  </div>
+
+  <!-- QUOTE -->
+  <div class="quote-section">
+    <div class="container">
+      <p>「産後、昔のブラが合わなくなった。」</p>
+      <p>「忙しくて、自分の下着を後回しにしてきた。」</p>
+      <p>「プロに一度、ちゃんと見てもらいたかった。」</p>
+      <p class="quote-close">そんなあなたへ。プロの視点で、あなたの心と体に寄り添う特別な45分間。</p>
+    </div>
+  </div>
+
+  <!-- こんな人におすすめ -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">For You</p>
+    <h2 class="section-title">こんな人におすすめ</h2>
+    <ul class="target-list">
+      <li>産後・授乳後、バストの形や大きさが変わって困っている</li>
+      <li>昔のブラが合わなくなったけど、どう選べばいいか分からない</li>
+      <li>忙しくて自分の下着を後回しにしてきたママ</li>
+      <li>プロのランジェリースタイリストに客観的なアドバイスをもらいたい</li>
+    </ul>
+  </div>
+
+  <!-- イベント詳細 -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">Details</p>
+    <h2 class="section-title">イベント詳細</h2>
+    <div class="detail-card">
+      <div class="detail-row">
+        <div class="detail-key">日時</div>
+        <div class="detail-val">4月28日（火）<br>10:00 〜 16:00</div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-key">場所</div>
+        <div class="detail-val">思い出アトリエ kimiiro<br><span style="font-size:12px;color:var(--muted)">市川駅近く（ご予約後に詳細をお送りします）</span></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-key">料金</div>
+        <div class="detail-val"><strong>¥ 3,000</strong><br><span style="font-size:12px;color:var(--muted)">＋ カフェ利用代 ¥300</span></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-key">形式</div>
+        <div class="detail-val">完全予約制<br>1枠45分（入れ替え15分）全6枠</div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-key">定員</div>
+        <div class="detail-val">6名<br><span style="font-size:12px;color:var(--muted)">当日空きあれば飛び込み相談可</span></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-key">子連れ</div>
+        <div class="detail-val">OK 🤍</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 当日できること -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">Menu</p>
+    <h2 class="section-title">当日できること</h2>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-num">01</div>
+        <div class="menu-name">精密採寸＆フィッティング</div>
+        <div class="menu-desc">自分に合ったブラを選べている人は3割以下。14年のキャリアを持つプロが「なぜ合わないのか」を紐解き、本当にぴったりのサイズを導き出します。</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-num">02</div>
+        <div class="menu-name">お悩み相談</div>
+        <div class="menu-desc">下垂・削げ・ハミ肉・産後のブラ選びなど、今の悩みから将来の体型維持まで具体的なアドバイスをお伝えします。</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-num">03</div>
+        <div class="menu-name">試着体感</div>
+        <div class="menu-desc">試着サンプルを使用し、正しい着け方によるシルエットの変化と心地よさを実際に体感できます。</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-num">04</div>
+        <div class="menu-name">デジタル・ランジェリーメモ</div>
+        <div class="menu-desc">スタイリングのポイントやおすすめブランドを、後でお買い物に役立つ形式でLINEにてお送りします。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ポリシー -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">Policy</p>
+    <h2 class="section-title">安心してご参加ください</h2>
+    <div class="policy-box">
+      <ul>
+        <li>下着商品の販売・勧誘は一切ございません</li>
+        <li>特定のブランドに偏らず、中立な立場でご提案します</li>
+        <li>場合によりランジェリースタイリストのサービスをご案内する場合があります</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 持ち物 -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">Preparation</p>
+    <h2 class="section-title">持ち物・服装</h2>
+    <div class="belong-card">
+      <div class="belong-row">
+        <span class="belong-label">持ち物</span>
+        <span>普段お使いのブラジャー（任意・お悩み確認用）</span>
+      </div>
+      <div class="belong-row">
+        <span class="belong-label">服装</span>
+        <span>脱ぎ着しやすい上下分かれた服装がスムーズです</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- プロフィール -->
+  <div class="section">
+    <div class="divider"></div>
+    <p class="section-label">Profile</p>
+    <h2 class="section-title">主催者プロフィール</h2>
+    <div class="profile-list">
+      <div class="profile-card">
+        <div class="profile-name">ランジェリースタイリスト Aki（アキ）</div>
+        <div class="profile-role">Lingerie Stylist</div>
+        <div class="profile-desc">業界歴14年（元ワコール販売・教育担当）。2児の母としての視点とプロの知識を掛け合わせ、特定のブランドに縛られない中立なスタイリングを提供。</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-name">カフェオーナー きいちゃん</div>
+        <div class="profile-role">Café Owner · Counselor</div>
+        <div class="profile-desc">「思い出アトリエ kimiiro」主宰。2児の母であり、現役の心理カウンセラー。ママたちが安心して自分を語れる居場所づくりを行っている。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="divider"></div>
+    <p class="cta-label">残り6枠・完全予約制</p>
+    <a href="TALLY_FORM_URL" class="cta-btn">
+      お申し込みはこちら
+      <span>Apply for the event</span>
+    </a>
+    <p class="cta-note">
+      ※ご予約後、詳細な会場住所をお送りします<br>
+      ※当日空きがある場合のみ飛び込み相談も受け付けます<br>
+      ご不明な点はLINEよりお気軽にどうぞ
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>@aki.lingerie_stylist62627</p>
+  </div>
+
+</body>
+</html>
